@@ -1,0 +1,5 @@
+---
+title: Haskell bindings to the Microsoft Graph API
+---
+
+Stay tuned..
