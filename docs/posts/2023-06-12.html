@@ -10,8 +10,10 @@
         <!-- Cirrus CSS -->
         <link rel="stylesheet" type="text/css" href="../css/cirrus.min.css" />
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+             <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> 
     </head>
     <body>
 
@@ -26,8 +28,17 @@
             <div class="nav-left">
             </div>
             <div class="nav-right">
-                <a href="../contact.html">Contact</a>
-                <a href="../archive.html">Archive</a>
+                <div class="nav-item has-sub toggle-hover" id="dropdown">
+                    <a class="nav-dropdown-link">Menu</a> 
+                    <ul class="dropdown-menu dropdown-animated" role="menu">
+                        <li role="menu-item"><a href="../contact.html">Contact</a></li>
+                        <li role="menu-item"><a href="../archive.html">Archive</a></li>
+                        <!-- <li role="menu-item"><a href="#">First Item</a></li>
+                             <li role="menu-item"><a href="#">Second Item</a></li> -->
+                    </ul>
+                </div>
+                <!-- <a href="/contact.html">Contact</a>
+                     <a href="/archive.html">Archive</a> -->
             </div>
          </div>
         </div>
