@@ -28,10 +28,10 @@
          <div class="header-nav" id="header-menu">
             <div class="nav-left">
             </div>
-            <div class="nav-right" onclick="menuToggle()">
+            <div class="nav-right" >
                 <div class="nav-item has-sub toggle-hover" id="dropdown">
                     <a class="nav-dropdown-link">Menu</a> 
-                    <ul class="dropdown-menu dropdown-animated" role="menu">
+                    <ul class="dropdown-menu dropdown-animated" role="menu" id="menuItems" onclick="menuToggle()">
                         <li role="menu-item"><a href="/contact.html">Contact</a></li>
                         <li role="menu-item"><a href="/archive.html">Archive</a></li>
                     </ul>
@@ -65,7 +65,7 @@
         <script>
          /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
          function menuToggle() {
-             var x = document.getElementById("dropdown");
+             var x = document.getElementById("menuItems");
              if (x.style.display === "block") {
                  x.style.display = "none";
              } else {
