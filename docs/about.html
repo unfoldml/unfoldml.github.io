@@ -30,12 +30,12 @@
             <div class="nav-right">
                 <div class="nav-item has-sub toggle-hover" id="dropdown">
                     <a class="nav-dropdown-link">Menu</a>
-                    <div id="menuItems" onclick="menuToggle()">
+
                         <ul class="dropdown-menu dropdown-animated" role="menu">
                             <li role="menu-item"><a href="./contact.html">Contact</a></li>
                             <li role="menu-item"><a href="./archive.html">Archive</a></li>
                         </ul>
-                    </div>
+
                 </div>
             </div>
          </div>
@@ -74,20 +74,22 @@ blandit et, interdum nec magna.</p>
             </div>
         </section>
 
-
-
         <script>
-         /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-         function menuToggle() {
-             var x = document.getElementById("menuItems");
-             if (x.style.display === "block") {
-                 x.style.display = "none";
-             } else {
-                 x.style.display = "block";
-             }
-         } 
-        </script>
+         // Get all the nav-btns in the page
+         let navBtns = document.querySelectorAll('.nav-btn');
 
+         // Add an event handler for all nav-btns to enable the dropdown functionality
+         navBtns.forEach(function (ele) {
+             ele.addEventListener('click', function() {
+                 // Get the dropdown-menu associated with this nav button (insert the id of your menu)
+                 let dropDownMenu = document.getElementById('dropdown');
+
+                 // Toggle the nav-btn and the dropdown menu
+                 ele.classList.toggle('active');
+                 dropDownMenu.classList.toggle('active');
+             });
+         });
+        </script>
 
         <!-- <div id="footer">
              </div> -->
