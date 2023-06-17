@@ -32,7 +32,7 @@
                 <div class="nav-item has-sub toggle-hover" id="dropdown">
                     <a class="nav-dropdown-link">Menu</a>
 
-                        <ul class="dropdown-menu dropdown-animated" role="menu" >
+                        <ul class="dropdown-menu dropdown-animated" role="menu" id="ulMenu">
                             <li role="menu-item"><a href="/contact.html">Contact</a></li>
                             <li role="menu-item"><a href="/archive.html">Archive</a></li>
                         </ul>
@@ -70,7 +70,7 @@
          navBtns.forEach(function (ele) {
              ele.addEventListener('click', function() {
                  // Get the dropdown-menu associated with this nav button (insert the id of your menu)
-                 let dropDownMenu = document.getElementById('dropdown');
+                 let dropDownMenu = document.getElementById('ulMenu');
 
                  // Toggle the nav-btn and the dropdown menu
                  ele.classList.toggle('active');
